@@ -67,7 +67,7 @@ function writeReadMe(fileName, data) {
 
         if (err)
             throw err;
-        console.log("All data created in README.")
+        console.log("All data created in TestREADME.")
     });
 };
 
@@ -80,9 +80,9 @@ function init() {
 
     .then(function(answers) {
 
-        console.log('answers from the prompt', answers);
+        console.log('answers from the prompted questions', answers);
 
-        writeReadMe("README.md", generateMarkdown(answers));
+        writeReadMe("TestREADME.md", generateMarkdown(answers));
 
     });
 
